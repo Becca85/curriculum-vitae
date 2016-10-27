@@ -228,11 +228,11 @@ h3 {
 	margin-top: 0px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 750px){
 	.date, .lieu, .entreprise, .poste {
 		float: initial;
 		display: block;
-		margin-left: 0px;
+		margin: 0px;
 	}
 }
 
