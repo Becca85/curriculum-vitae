@@ -24,7 +24,7 @@ body {
 
 
 .separation {
-	height: 40px;
+	height: 20px;
 }
 
 /* --------- NAV --------- */
@@ -139,7 +139,7 @@ h3 {
     background-color: #E7C1D6;
     text-align: center;
     color: #2C272A;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 .soixanteDix {
@@ -148,7 +148,7 @@ h3 {
     background-color: #E7C1D6;
     text-align: center;
     color: #2C272A;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 .soixante {
@@ -157,7 +157,7 @@ h3 {
     background-color: #E7C1D6;
     text-align: center;
     color: #2C272A;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 .cinquante {
@@ -166,8 +166,18 @@ h3 {
     background-color: #E7C1D6;
     text-align: center;
     color: #2C272A;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
+
+.trente {
+	width: 35%;
+    height: 20px;
+    background-color: #E7C1D6;
+    text-align: center;
+    color: #2C272A;
+    margin-bottom: 7px;
+	}
+
 
 /*Colone 2*/
 
@@ -178,12 +188,21 @@ h3 {
 
 /*format des experiences*/
 
+.titreExpPro{
+	text-align: center;
+}
+
+.PresExpPro {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
 
 .poste {
 	float: left;
 	font-size: 20px;
 	font-weight: bold;
-	margin-top: 60px;
+	margin-top: 0px;
 	margin-bottom: 30px;
 }
 
@@ -192,7 +211,7 @@ h3 {
 	margin-left: 30px;
 	font-size: 15px;
 	font-weight: italic;
-	margin-top: 60px;
+	margin-top: 0px;
 }
 
 .lieu {
@@ -200,13 +219,21 @@ h3 {
 	margin-left: 30px;
 	margin-right: 30px;
 	font-size: 18px;
-	margin-top: 60px;
+	margin-top: 0px;
 }
 
 .entreprise {
 	float: right;
 	font-size: 17px;
-	margin-top: 60px;
+	margin-top: 0px;
+}
+
+@media (max-width: 800px){
+	.date, .lieu, .entreprise, .poste {
+		float: initial;
+		display: block;
+		margin-left: 0px;
+	}
 }
 
 .tache {
@@ -237,6 +264,12 @@ footer {
 	color: #FFFFFF;
 }
 
+.impression{
+	border-top: 1px solid #E9E2E7;
+	border-right: 1px solid #E9E2E7;
+	cursor: pointer;
+}
+
 .pContact{
 display: inline;
 }
@@ -259,102 +292,223 @@ p{
 	margin-top: 10px;
 }
 
+
+
+
+
+
+/*VERSION PRINT*/
+
 @media print {
 
-h2 {
-	font-size: 12px;
-	text-align: left;
-}
+	body {
+		-webkit-print-color-adjust: exact;
+		-webkit-print-color-adjust: economy | exact
+	}
 
-/*1er colone*/
-.colone1 {
-	background-color: #2C272A;
-	color: white;
-}
-/*format des info perso*/
+	.separation {
+		height: 0px !important;
+	}
 
-.nom {
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: 20px;
-}
+	p {
+		margin: 2px 2px !important;
+		font-size: 14px !important;
+	}
 
-.detailsInfoPerso {
-	font-size: 12px;
-}
+	h2 {
+		font-size: 13px !important;
+		text-align: center;
+		margin-top: 27px;
+	}
 
-.detailsInfoPerso a {
-	text-decoration: none;
-	cursor: pointer;
-	color: white;
-}
+	
+	.rowCV{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 
-.annee {
-	font-size: 12px;
-}
-p a.href {
-	display: none;
-}
+	.colone1, .colone2 {
+		display: inline-block;
+		vertical-align: top;
+	}
 
 
-/*format des competences*/
+	/*1er colone*/
+	.colone1 {
+		text-align: left;
+		width: 40%;
+		color: white;
+	}
+	/*format des info perso*/
 
-.titreCv{
-	margin-bottom: 5px;
-	font-weight: bold;
-}
+	.nom {
+		font-size: 12px;
+		font-weight: initial;
+		margin-top: 22px !important;
+		margin-bottom: 2px !important;
+		text-decoration: none;
+	}
 
-h3 {
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: 5px;
-}
+	
 
-/*format des experiences*/
+	.detailsInfoPerso a {
+		text-decoration: none;
+		cursor: pointer;
+		color: white;
+	}
+	.situation{
+		display :none;
+	}
+
+	.annee {
+		font-weight: initial;
+		margin: 2px 2px;
+	}
+
+	/*format des div pourcentage*/
+
+	.quatreVingt {
+		width: 80%;
+		font-size: 12px;
+		border: 1px solid grey !important;
+	    height: 20px;
+	    background-color: #BF9FBF !important;
+	    text-align: center;
+	    color: #2C272A !important;
+	    margin-bottom: 5px;
+	    padding-top: 2px;
+	}
+
+	.soixanteDix {
+		width: 70%;
+		font-size: 12px;
+		border: 1px solid grey !important;		
+	    height: 20px;
+	    background-color: #BF9FBF !important;
+	    text-align: center;
+	    color: #2C272A !important;
+	    margin-bottom: 5px;
+	    padding-top: 2px;
+	}
+
+	.soixante {
+		width: 60%;
+		font-size: 12px;
+		border: 1px solid grey !important;		
+	    height: 20px;
+	    background-color: #BF9FBF !important;
+	    text-align: center;
+	    color: #2C272A !important;
+	    margin-bottom: 5px;
+	    padding-top: 2px;
+	}
+
+	.cinquante {
+		width: 50%;
+		font-size: 12px;
+		border: 1px solid grey !important;		
+	    height: 20px;
+	    background-color: #BF9FBF !important;
+	    text-align: center;
+	    color: #2C272A !important;
+	    margin-bottom: 5px;
+	    padding-top: 2px;
+	}
+
+	.trente {
+		width: 35%;
+		font-size: 12px;
+		border: 1px solid grey !important;		
+	    height: 20px;
+	    background-color: #BF9FBF !important;
+	    text-align: center;
+	    color: #2C272A !important;
+	    margin-bottom: 5px;
+	    padding-top: 2px;
+	}
 
 
-.poste {
-	float: left;
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: 5px;
-}
 
-.date {
-	float: left;
-	font-size: 12px;
-	font-weight: italic;
-}
+	/*format des competences*/
 
-.lieu {
-	float: right;
-	margin-left: 30px;
-	margin-right: 30px;
-	font-size: 12px;
+	.titreCv{
+		font-size: 16px !important;
+		margin-bottom: 5px;
+		font-weight: initial;
+	}
 
-}
+	h3 {
+		font-size: 16px;
+		font-weight: initial;
+		margin-top: 12px;
+	}
 
-.entreprise {
-	float: right;
-	font-size: 12px;
+	/*Colonne 2*/
 
-}
+	.colone2 {
+		width: 57%;
+		color: #2C272A;
+	}
 
-.tache {
-	margin-left: 25px;
-}
+	/*format des experiences*/
 
-.immo {
-	padding-right: 0px;
-}
+	.titreExpPro{
+		font-size: 22px !important;
+		font-weight: 800px !important;
+	}
+
+	.expPro {
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.poste {
+		float: initial;
+		font-size: 16px;
+		font-weight: initial;
+		margin: 5px 0px !important;
+		display:block;
+		border-bottom: 1px solid !important;
+	}
+
+	
+	.date {
+		float: left;
+		font-size: 11px !important;
+		margin : 5px 0px !important;
+	}
+
+	.lieu {
+		float: left;
+		font-size: 11px !important;
+		margin : 5px 0px 5px 15px !important;
+
+
+	}
+
+	.entreprise {
+		font-size: 11px !important;
+		margin: 5px 0px !important;
+
+
+	}
+
+	.tache {
+		margin-left: 5px;
+	}
+
+	.immo {
+		padding-right: 0px;
+	}
 
 
 
 
-/*footer*/
-footer{
-	display: none;
-}
+	/*footer*/
+	footer{
+		display: none;
+	}
 }
 
 
