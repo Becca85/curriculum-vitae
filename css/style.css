@@ -488,6 +488,7 @@ p{
 	}
 
 	.entreprise {
+		float: right;
 		font-size: 11px !important;
 		margin: 5px 0px !important;
 
