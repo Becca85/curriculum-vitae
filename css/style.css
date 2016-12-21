@@ -6,7 +6,24 @@ rose : #E9E2E7;
 
 */
 
+.btn {
 
+}
+.btn-go-top {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	background-color: #444;
+	color: #eee;
+	text-align: center;
+	z-index: 999;
+	bottom: 25px;
+	right: 25px;
+}
+.btn-go-top a {
+	color: #eee;
+}
 
 @font-face {
   font-family: 'Lora';
@@ -79,6 +96,7 @@ nav ul li:hover{
 	background-color: #E9E2E7;
 	margin-left: 0px;
 	margin-right: 0px;
+	height: 1px;
 }
 
 p {
@@ -138,8 +156,9 @@ h3 {
     height: 20px;
     background-color: #E7C1D6;
     text-align: center;
-    color: #2C272A;
-    margin-bottom: 7px;
+    color: #241E21;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .soixanteDix {
@@ -147,8 +166,9 @@ h3 {
     height: 20px;
     background-color: #E7C1D6;
     text-align: center;
-    color: #2C272A;
-    margin-bottom: 7px;
+    color: #241E21;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .soixante {
@@ -156,8 +176,9 @@ h3 {
     height: 20px;
     background-color: #E7C1D6;
     text-align: center;
-    color: #2C272A;
-    margin-bottom: 7px;
+    color: #241E21;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .cinquante {
@@ -165,8 +186,9 @@ h3 {
     height: 20px;
     background-color: #E7C1D6;
     text-align: center;
-    color: #2C272A;
-    margin-bottom: 7px;
+    color: #241E21;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .trente {
@@ -174,8 +196,9 @@ h3 {
     height: 20px;
     background-color: #E7C1D6;
     text-align: center;
-    color: #2C272A;
-    margin-bottom: 7px;
+    color: #241E21;
+    margin-bottom: 10px;
+
 	}
 
 
@@ -193,10 +216,15 @@ h3 {
 }
 
 .PresExpPro {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 30px;
 }
 
+.titreExpSemiPro {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	text-decoration: underline;
+}
 
 .poste {
 	float: left;
@@ -234,6 +262,13 @@ h3 {
 		display: block;
 		margin: 0px;
 	}
+
+	.rowCV{
+	background-color: #E9E2E7;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 100%;
+}
 }
 
 .tache {
@@ -320,6 +355,10 @@ p{
 		text-align: center;
 		margin-top: 27px;
 	}
+	h3 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
 
 	
 	.rowCV{
@@ -377,6 +416,7 @@ p{
 	    text-align: center;
 	    color: #2C272A !important;
 	    margin-bottom: 5px;
+	    margin-top: 0px;
 	    padding-top: 2px;
 	}
 
@@ -389,6 +429,7 @@ p{
 	    text-align: center;
 	    color: #2C272A !important;
 	    margin-bottom: 5px;
+	    margin-top: 0px;
 	    padding-top: 2px;
 	}
 
@@ -401,6 +442,7 @@ p{
 	    text-align: center;
 	    color: #2C272A !important;
 	    margin-bottom: 5px;
+	    margin-top: 0px;
 	    padding-top: 2px;
 	}
 
@@ -413,6 +455,7 @@ p{
 	    text-align: center;
 	    color: #2C272A !important;
 	    margin-bottom: 5px;
+	    margin-top: 0px;
 	    padding-top: 2px;
 	}
 
@@ -425,6 +468,7 @@ p{
 	    text-align: center;
 	    color: #2C272A !important;
 	    margin-bottom: 5px;
+	    margin-top: 0px;
 	    padding-top: 2px;
 	}
 
@@ -435,6 +479,7 @@ p{
 	.titreCv{
 		font-size: 16px !important;
 		margin-bottom: 5px;
+		margin-top: 5px;
 		font-weight: initial;
 	}
 
@@ -452,7 +497,9 @@ p{
 	}
 
 	/*format des experiences*/
-
+	.none {
+		display: none;
+	}
 	.titreExpPro{
 		font-size: 22px !important;
 		font-weight: 800px !important;
